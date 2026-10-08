@@ -21,3 +21,6 @@ Der lokale Grundlagenstand wurde als Commit 6070324 auf main nach GitHub gepusht
 
 ## CHG-005 – Codespaces
 Nutzer wählt GitHub Codespaces zum browserbasierten Ausprobieren. Devcontainer Node 24, Setup mit Codespace-HTTPS-Origin und separater Startbefehl auf Port 3000; Adminanlage weiterhin explizit. Private Portfreigabe beibehalten. Keine Codespace-Erstellung/Kostenbuchung durch den Agenten. Lokale Prüfung und noch ausstehender realer Codespaces-Smoke siehe changes/CHG-005.md.
+
+## CHG-006 – statische Pages-Vorschau
+Nutzer wünscht zunächst nur Frontend zum Durchklicken; dies ersetzt für die Vorschau Login-/Serverpersistenzanforderungen ausdrücklich. Separate Export-App mit identischem Workspace, synthetischem Projekt und Browserstorage implementiert. Kernreise/Reload/Druck/Reset/Projektanlage sowie Desktop/Mobile gesichtet und geprüft; vollständiger App-Build weiterhin PASS. Actions-Workflow zur Veröffentlichung auf Pages vorbereitet; Live-Nachweis wegen fehlendem API-Zugriff offen. PAGES.md beschreibt die nötige Source-Einstellung GitHub Actions.

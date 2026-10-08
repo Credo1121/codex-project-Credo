@@ -1,4 +1,8 @@
 # ORG COCKPIT – persönlicher Analysearbeitsplatz
+
+**[Interaktive Frontend-Vorschau öffnen](https://credo1121.github.io/codex-project-Credo/)** · [GitHub-Pages-Veröffentlichung](PAGES.md)
+
+Die Pages-Vorschau verwendet ausschließlich Browserdaten, ohne Login oder Backend. Die folgende Dokumentation beschreibt die zusätzlich erhaltene vollständige App.
 Erster vertikaler Lieferabschnitt: geschützter Einzel-Admin, Projekt mit Sechs-Wochen-Roadmap, Aufgaben/Checklisten, Marktmanagement-Sitzung, eigener editierbarer Leitfaden mit Druckansicht und getrennte Nachbereitung/Folgeaufgaben. Dauerhafte lokale SQLite-Speicherung.
 
 Noch kein vollständiges MVP: weitere Rollen/Methodikinhalte, Ergebnis-/Berichtsvorlagen, zulässige Notizen/Referenzen und Backup/Restore folgen. Kein Deployment ausgeführt.

@@ -6,3 +6,5 @@ node_modules/
 test-results/
 playwright-report/
 *.tsbuildinfo
+pages-preview/out/
+pages-preview/next-env.d.ts

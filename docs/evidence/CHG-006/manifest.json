@@ -1,0 +1,43 @@
+{
+  "change": "CHG-006",
+  "time_utc": "2026-10-08T13:01:30.948834+00:00",
+  "basis": "working tree based on 2549ddf; final source committed with evidence",
+  "route": "/codex-project-Credo/",
+  "viewports": {
+    "desktop": "1440x1000",
+    "mobile": "390x844"
+  },
+  "states": [
+    "overview",
+    "interview",
+    "print"
+  ],
+  "viewed": [
+    "overview-desktop.png",
+    "overview-mobile.png",
+    "interview-mobile.png",
+    "print.png"
+  ],
+  "files": [
+    {
+      "file": "interview-desktop.png",
+      "sha256": "1750127b37522140ed5621fdc474b6a2baa976c31d2caecf8ab0410c3b116026"
+    },
+    {
+      "file": "interview-mobile.png",
+      "sha256": "2a868a2b3f5289af1a82d23fd18e44ae3c369ccd2b131eb7ec9d3141b783b4b6"
+    },
+    {
+      "file": "overview-desktop.png",
+      "sha256": "a843a986d8fb4f136a9af03fb956ea60e4d9764c4fb6ae2fc21e9a997b924d42"
+    },
+    {
+      "file": "overview-mobile.png",
+      "sha256": "59cad2cd66268069e2469d9043f8a6fc4fa9cb6378d6d569444c3c4d0452dfb7"
+    },
+    {
+      "file": "print.png",
+      "sha256": "232e0fd905351d0db6bd97c12f54f33b65f8ac630e32564217142c7cc7ecf0b0"
+    }
+  ]
+}
