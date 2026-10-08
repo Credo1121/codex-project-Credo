@@ -26,3 +26,8 @@ Manuelle Bewertung mit anonymisierten Begründungen/Evidenzkennungen bestätigt.
 
 ## Folgeantworten bestätigt
 Interviewbeginn 19. Oktober, fertige Ergebnisse 30. November; im aktuellen Gespräch als 2026 eingeordnet. Hands-on heißt Lösungen an kleinere Organisation ohne umfangreiche Gremien-/Enterprise-Toollandschaft anpassen; Standardisierung und Tools bei Nutzen, Excel/einfache Werkzeuge bei ausreichender Tragfähigkeit. Keine Toolmarke als Reifegradvoraussetzung. Konkrete Reviewtermine nicht genannt. Plan mit Arbeitsfenstern und Draft-REQ-009/010/011 erstellt; vorgeschlagene Skalen/Zielbildanker müssen noch fachlich reviewed/refiniert werden.
+
+## Schärfung: Produktmanagement und Rauchmelder-Portfolio
+Quelle: Nutzerreview nach Version 0.2.0. Analyseanker ist ein klar abgegrenztes Produktportfolio eines Rauchmelderherstellers. Das größte Erkenntnisinteresse liegt beim Produktmanagement. Untersucht werden aktuelles Portfolio, Produktroadmap, konkrete Produktvorhaben, Entwicklung, Governance, Regulatorik, Qualität, Übergaben, Verantwortlichkeiten und interne Nachverfolgung. Eine vollständige Customer Journey oder ein beim Kunden startender End-to-End-Prozess spannt den Auftrag zu weit. Markt-/Kundeninformationen bleiben nur dort relevant, wo Produktmanagement sie als Input oder Rückkopplung einer Entscheidung verwendet.
+
+Zielgruppen müssen technisch und methodisch fest gekoppelt sein: Die Auswahl einer anderen Interviewrolle benötigt einen anderen Fragenkatalog. Bestehende individuelle Sitzungskopien dürfen dabei nicht stillschweigend überschrieben werden. Bestätigte Zielgruppen entsprechen dem ursprünglichen Auftrag; REQ-012 konkretisiert die durchgängige Reise und Kopierregel. Keine weiteren fachlichen Fragen blockieren den ersten Slice.

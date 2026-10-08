@@ -20,3 +20,6 @@ Neue Datengrenze klären: generische/anonymisierte oder vertrauliche Meetinginha
 
 ## Nächste Planungsiteration – Radar, Interview, Roadmap
 Neue Priorität aus Nutzerfeedback; Planung vor Umsetzung. REQ-009/010/011 Draft. Zuerst Fragen-/Zielbildkriterien und ergebnisorientierte Roadmap gemeinsam refinieren, danach eine durchgängige synthetische Reise Wissenslücke → Interview → manuelle Nachbereitung → bestätigte Folgeaufgabe. Interviewstart 19.10.2026, Ergebnisse 30.11.2026; Vorschläge für Arbeitsfenster siehe planning/radar-interview-roadmap.md. Hands-on = zweckmäßige Wirkung mit verhältnismäßigem Aufwand, nicht Tool-/Gremienausbau. Empirischer Benchmark später mit belegter Vergleichsgrundlage. Bestehende S1–S4 bleiben erhalten, Reihenfolge im Refinement entsprechend neu priorisieren; keine stillschweigende Accepted-/Done-Aussage.
+
+## P0-Ergänzung – produktmanagementzentrierte Rollenleitfäden
+REQ-012 Ready: Rauchmelder-Produktportfolio, Roadmap und konkrete Produktvorhaben als Analyseanker. Gemeinsamer PM-Kern plus zehn unterscheidbare Rollenvertiefungen. Zielgruppenwechsel baut ausschließlich die geöffnete Sitzung nach ausdrücklicher Bestätigung neu auf. Danach technische/fachliche Review; empirische Validierung und echte Interviewinhalte bleiben außerhalb dieses Slices.

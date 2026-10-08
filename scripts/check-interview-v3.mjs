@@ -1,0 +1,34 @@
+import { chromium,expect } from '@playwright/test';
+const base=process.env.PAGES_TEST_URL||'http://localhost:3020/codex-project-Credo/';
+const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});
+let stage='load';
+try{
+ const page=await browser.newPage({viewport:{width:1440,height:1000},locale:'de-DE'});
+ const errors=[];const api=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(new URL(r.url()).pathname.includes('/api/'))api.push(r.url())});
+ await page.goto(base);
+ page.once('dialog',dialog=>dialog.accept());await page.getByRole('button',{name:'Beispiel zurücksetzen'}).click();
+ await expect(page.getByText('Klarer Blick. Nächster Schritt.')).toBeVisible();
+ await page.getByRole('button',{name:/Interviews/}).click();stage='default-guide';
+ await expect(page.getByLabel('Zielgruppe')).toHaveValue('Produktmanager');
+ await expect(page.getByRole('textbox',{name:'Frage 1',exact:true})).toHaveValue(/Portfolio- oder Roadmapübersicht/);
+ await expect(page.getByRole('textbox',{name:'Frage 5',exact:true})).toHaveValue(/Für welche Ergebnisse im Lebenszyklus/);
+ await page.screenshot({path:'docs/evidence/CHG-010/productmanager-desktop.png',fullPage:true});
+ stage='cancel-switch';page.once('dialog',dialog=>dialog.dismiss());await page.getByLabel('Zielgruppe').selectOption('Qualität/Zulassung');
+ await expect(page.getByLabel('Zielgruppe')).toHaveValue('Produktmanager');
+ await expect(page.getByRole('textbox',{name:'Frage 5',exact:true})).toHaveValue(/Für welche Ergebnisse im Lebenszyklus/);
+ stage='role-switch';page.once('dialog',dialog=>dialog.accept());await page.getByLabel('Zielgruppe').selectOption('Qualität/Zulassung');
+ await expect(page.getByLabel('Zielgruppe')).toHaveValue('Qualität/Zulassung');
+ await expect(page.getByRole('textbox',{name:'Frage 5',exact:true})).toHaveValue(/An welchem Punkt eines Produktvorhabens müssen Qualität und Zulassung/);
+ await expect(page.getByRole('textbox',{name:'Frage 5',exact:true})).not.toHaveValue(/Für welche Ergebnisse im Lebenszyklus/);
+ await page.getByRole('button',{name:'Änderungen speichern'}).click();await expect(page.getByRole('status')).toHaveText('Änderungen gespeichert.');
+ await page.reload();await page.getByRole('button',{name:/Interviews/}).click();
+ await expect(page.getByLabel('Zielgruppe')).toHaveValue('Qualität/Zulassung');
+ await expect(page.getByRole('textbox',{name:'Frage 6',exact:true})).toHaveValue(/Welche Nachweise und Entscheidungen sind für das betrachtete Rauchmelder-Portfolio/);
+ await page.screenshot({path:'docs/evidence/CHG-010/quality-guide-desktop.png',fullPage:true});
+ await page.setViewportSize({width:390,height:844});expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.screenshot({path:'docs/evidence/CHG-010/quality-guide-mobile.png',fullPage:true});await page.setViewportSize({width:1440,height:1000});
+ stage='print';await page.getByRole('button',{name:'Druckansicht',exact:true}).click();await expect(page.getByText(/^Qualität\/Zulassung ·/)).toBeVisible();await expect(page.locator('.print-question')).toHaveCount(7);
+ await page.emulateMedia({media:'print'});await page.screenshot({path:'docs/evidence/CHG-010/quality-print.png',fullPage:true});await page.emulateMedia({media:'screen'});
+ expect(errors).toEqual([]);expect(api).toEqual([]);
+ console.log('PASS: PM-basierter Leitfaden, bestätigter Zielgruppenwechsel, passende Qualitätsfragen, Abbruchschutz, Persistenz, Druck, Mobile, keine API-Aufrufe.');
+}catch(error){console.error('FAIL stage '+stage+': '+String(error));process.exitCode=1}finally{await browser.close()}

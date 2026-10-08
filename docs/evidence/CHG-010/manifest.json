@@ -1,0 +1,14 @@
+{
+  "change": "CHG-010",
+  "version": "0.2.1",
+  "time_utc": "2026-10-08T15:40:00Z",
+  "route": "/codex-project-Credo/",
+  "viewports": {"desktop": "1440x1000", "mobile": "390x844"},
+  "viewed": ["productmanager-desktop.png", "quality-guide-mobile.png", "quality-print.png"],
+  "files": [
+    {"path":"productmanager-desktop.png","sha256":"3ad26515a589e60ad8ebb200117007b026223316d2a9190573ad160af633b24e"},
+    {"path":"quality-guide-desktop.png","sha256":"3634c1b0b9d153210aed9f50af14d9396cddec069204449dfc69974878919506"},
+    {"path":"quality-guide-mobile.png","sha256":"684037dfd96504293809c5aa6ea0dd34aec3bb520a4d0033ed2e8cb3bfb03400"},
+    {"path":"quality-print.png","sha256":"e2737c0a850bd5860a7aeeb49cceb0353468285e1e18497f1a5d73e0c3ad67e2"}
+  ]
+}
