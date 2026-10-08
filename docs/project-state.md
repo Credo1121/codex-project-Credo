@@ -15,3 +15,9 @@ Offene Entscheidungen für spätere lokale Übergabe: Nutzer-OS/Browser und Leis
 
 ## Letzte Änderung CHG-004
 Nutzer wünscht ORG COCKPIT und blaue Grundfarbe. UI/Metadaten aktualisiert; #1C4890 als visuelle Annäherung, helle Arbeitsflächen. Produktionsbuild/TypeScript bestanden, Lint 0 Fehler/3 bestehende Warnungen. Neue Aufnahmen Desktop/Mobile gesichtet: evidence/CHG-004. Keine Datenänderung, keine erneute Voll-MVP-Abnahme. Nächster Schritt: Review und bestehendes Backlog weiterführen.
+
+## Webbetrieb – aktueller Auftrag
+Der lokale Grundlagenstand wurde als Commit 6070324 auf main nach GitHub gepusht. Nutzer möchte inzwischen Browserbetrieb ohne lokalen Server. GitHub Pages zeigt nur statische Dokumentation. Hosting-Auswahl (dauerhafter Webdienst oder Codespaces zum Ausprobieren) ist offen; siehe discovery/webbetrieb.md. Bisherige Angaben zu uncommitted Branch work und nicht beauftragtem Deployment sind historischer Stand. Kein Webdeployment ausgeführt.
+
+## CHG-005 – Codespaces
+Nutzer wählt GitHub Codespaces zum browserbasierten Ausprobieren. Devcontainer Node 24, Setup mit Codespace-HTTPS-Origin und separater Startbefehl auf Port 3000; Adminanlage weiterhin explizit. Private Portfreigabe beibehalten. Keine Codespace-Erstellung/Kostenbuchung durch den Agenten. Lokale Prüfung und noch ausstehender realer Codespaces-Smoke siehe changes/CHG-005.md.

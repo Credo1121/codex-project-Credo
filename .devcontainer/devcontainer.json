@@ -1,0 +1,21 @@
+{
+  "name": "ORG COCKPIT",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:4-24-trixie",
+  "forwardPorts": [
+    3000
+  ],
+  "portsAttributes": {
+    "3000": {
+      "label": "ORG COCKPIT",
+      "onAutoForward": "notify"
+    }
+  },
+  "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "CODESPACES.md"
+      ]
+    }
+  },
+  "postCreateCommand": "npm ci && npm run codespaces:setup"
+}

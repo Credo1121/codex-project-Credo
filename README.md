@@ -5,6 +5,10 @@ Noch kein vollständiges MVP: weitere Rollen/Methodikinhalte, Ergebnis-/Berichts
 
 Für die erste lokale Einrichtung: **[START-HIER.md](START-HIER.md)**.
 
+## Im Browser mit GitHub Codespaces
+
+**[Codespaces-Startanleitung](CODESPACES.md)**: GitHub → Code → Codespaces → Create codespace on main. Einrichtung und App-Start erfolgen im Browserterminal. Port 3000 privat lassen. Kein lokaler Node.js-Start auf deinem Mac erforderlich.
+
 ## Von GitHub auf dem Mac starten
 
 Repository klonen und in den App-Ordner wechseln:
