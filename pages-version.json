@@ -1,7 +1,7 @@
 {
   "application": "ORG COCKPIT",
-  "release": "CHG-010",
+  "release": "CHG-011",
   "mode": "frontend-preview",
   "publication": "main-root",
-  "features": ["product-management-radar", "role-specific-interview-guides", "gantt-roadmap"]
+  "features": ["evidence-chain", "star-plus-framework", "7s-orientation", "role-specific-interview-guides", "gantt-roadmap"]
 }

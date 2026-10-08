@@ -22,3 +22,8 @@ Gantt berechnet vorgeschlagene Arbeitsfenster relativ zum Projektzeitraum; binde
 
 ## Erweiterung 0.2.1 / CHG-010
 Die Methodikvorlage v3 besteht aus einem produktmanagementzentrierten Kern, optional zwei Fragen aus einer Radar-Fokusperspektive und je fünf Rollenfragen für zehn Zielgruppen. Jede Sitzung speichert weiterhin eine unabhängige Fragenkopie. Der Zielgruppenwechsel erzeugt nur nach Bestätigung eine neue Kopie für die aktive Sitzung und aktualisiert Ziel, Rolle und Methodikversion gemeinsam. Abbruch lässt die Sitzung unverändert. Das serverseitige Zod-Schema akzeptiert nur die zehn bekannten Rollen und v1–v3 als Methodikherkunft. Interne Perspektivschlüssel bleiben aus Kompatibilitätsgründen stabil; sichtbare Radarbezeichnungen wurden auf Portfolio, Roadmap, Entwicklung, Governance und Produktmanagement ausgerichtet.
+
+## Erweiterung 0.3.0 / CHG-011
+Das bestehende Projektaggregat erhält additive, standardmäßig leere Sammlungen für Analysefragen, Hypothesen, Evidenz, Befunde, Handlungsfelder und Maßnahmen. Referenzen werden serverseitig auf existierende Ziele geprüft; Befunde benötigen mindestens eine Evidenz, Handlungsfelder mindestens einen Befund und Maßnahmen ein Handlungsfeld. Bewertete Hypothesen benötigen eine Begründung. Alte Projekt-JSONs werden über Zod-Defaults kompatibel erweitert, ohne bestehende Interview- oder Radardaten umzuschreiben.
+
+Star+2-Dimensionsschlüssel liegen an Analysefragen, Hypothesen, Befunden und Handlungsfeldern. Die 7-S-Ansicht berechnet eine orientierende Projektion, speichert keine Dubletten. UI und Datenmodell erzeugen keine automatische Kausalität, Gewichtung oder Gesamtnote. Sitzungen können optional auf eine Analysefrage verweisen; ihre unabhängige Fragenkopie bleibt erhalten.

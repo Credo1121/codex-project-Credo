@@ -23,3 +23,6 @@ Neue Priorität aus Nutzerfeedback; Planung vor Umsetzung. REQ-009/010/011 Draft
 
 ## P0-Ergänzung – produktmanagementzentrierte Rollenleitfäden
 REQ-012 Ready: Rauchmelder-Produktportfolio, Roadmap und konkrete Produktvorhaben als Analyseanker. Gemeinsamer PM-Kern plus zehn unterscheidbare Rollenvertiefungen. Zielgruppenwechsel baut ausschließlich die geöffnete Sitzung nach ausdrücklicher Bestätigung neu auf. Danach technische/fachliche Review; empirische Validierung und echte Interviewinhalte bleiben außerhalb dieses Slices.
+
+## P0-Erweiterung – evidenzgeführte Analysekette
+REQ-013 Delivered technisch: eine kleine End-to-End-Kette von Analysefrage über Hypothese, Evidenz, Befund und Handlungsfeld bis Maßnahme/Wirksamkeitsprüfung. Star Model ist primärer Vollständigkeitsrahmen; Führung/Entscheidungen und Kultur/Zusammenarbeit sind gekennzeichnete Ergänzungen. 7-S ist eine alternative Orientierung auf dieselben Daten. Nächste P1-Schritte: Objekte bearbeiten/löschen, detaillierte Fallrekonstruktion, Hypothesenstatus-Workflow und Berichtsprojektion. Kein Upload, AI oder automatischer Kausalitäts-/Reifegradclaim.
