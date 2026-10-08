@@ -24,3 +24,6 @@ Nutzer wählt GitHub Codespaces zum browserbasierten Ausprobieren. Devcontainer 
 
 ## CHG-006 – statische Pages-Vorschau
 Nutzer wünscht zunächst nur Frontend zum Durchklicken; dies ersetzt für die Vorschau Login-/Serverpersistenzanforderungen ausdrücklich. Separate Export-App mit identischem Workspace, synthetischem Projekt und Browserstorage implementiert. Kernreise/Reload/Druck/Reset/Projektanlage sowie Desktop/Mobile gesichtet und geprüft; vollständiger App-Build weiterhin PASS. Actions-Workflow zur Veröffentlichung auf Pages vorbereitet; Live-Nachweis wegen fehlendem API-Zugriff offen. PAGES.md beschreibt die nötige Source-Einstellung GitHub Actions.
+
+## CHG-007 – Veröffentlichung aus main-Hauptverzeichnis
+Fertiger statischer Vorschau-Export auf main eingecheckt, damit die bisherige Branch-Pages-Veröffentlichung index.html statt README liefert. Build/Lint und reale statische Browsernavigation PASS. Live-Pages-Einstellungen/Deployment unverifiziert; ggf. main / (root) in Pages auswählen. Weitere Details changes/CHG-007.md.

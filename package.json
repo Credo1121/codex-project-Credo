@@ -19,7 +19,8 @@
     "codespaces:setup": "node scripts/local-setup.mjs --codespaces",
     "codespaces:start": "next start --hostname 0.0.0.0 --port 3000",
     "pages:build": "next build pages-preview",
-    "pages:dev": "next dev pages-preview --hostname 127.0.0.1 --port 3001"
+    "pages:dev": "next dev pages-preview --hostname 127.0.0.1 --port 3001",
+    "pages:export": "npm run pages:build && node scripts/export-pages-main.mjs"
   },
   "engines": {
     "node": ">=24 <25"

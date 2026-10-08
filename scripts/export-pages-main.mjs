@@ -1,0 +1,12 @@
+import { readdirSync,existsSync,readFileSync,writeFileSync,cpSync,rmSync } from 'node:fs';
+const manifest='.pages-export.json';
+const allowed=new Set(['404','404.html','__next.__PAGE__.txt','__next._full.txt','__next._tree.txt','_next','_not-found','index.html','index.txt']);
+const entries=readdirSync('pages-preview/out');
+if(entries.some(name=>!allowed.has(name)))throw Error('Unbekannte Exportdatei; Ausgabe zuerst prüfen.');
+const previous=existsSync(manifest)?JSON.parse(readFileSync(manifest,'utf8')).entries:[];
+if(!Array.isArray(previous)||previous.some(name=>!allowed.has(name)))throw Error('Ungültiges Exportmanifest.');
+for(const name of entries)if(existsSync(name)&&!previous.includes(name))throw Error('Vorhandene Datei wird nicht überschrieben: '+name);
+for(const name of previous)rmSync(name,{recursive:true,force:true});
+for(const name of entries)cpSync('pages-preview/out/'+name,name,{recursive:true});
+writeFileSync('.nojekyll','');writeFileSync(manifest,JSON.stringify({entries},null,2)+'\n');
+console.log('Statische Pages-Vorschau im main-Hauptverzeichnis aktualisiert.');

@@ -4,7 +4,13 @@ Ziel: https://credo1121.github.io/codex-project-Credo/
 
 Die Vorschau enthält synthetisches Projekt und Sitzung. Projektübersicht, Roadmap, Aufgaben/Checklisten, Leitfadeneditor, Projektanlage/-bearbeitung und Druckansicht lassen sich ausprobieren. Änderungen liegen nur im localStorage dieses Browsers; es gibt keinen Login, Server oder geräteübergreifenden Datenbestand. Nur synthetische Inhalte verwenden. „Beispiel zurücksetzen“ stellt den Ausgangsstand wieder her. Das Löschen der Browserdaten entfernt alle Vorschauänderungen.
 
-## Veröffentlichung
+## Veröffentlichung direkt aus main
+
+Der fertige statische Build liegt zusätzlich im Hauptverzeichnis von `main`: `index.html`, `_next` und `.nojekyll`. Damit kann die bestehende Branch-Veröffentlichung die App statt README anzeigen. Unter **Settings → Pages → Source → Deploy from a branch → Branch main → / (root) → Save** wählen. Der von GitHub ausgelöste Pages-Build veröffentlicht diesen Stand. Danach die Zieladresse hart neu laden oder in einem privaten Browserfenster öffnen.
+
+Nach künftigen UI-Änderungen vor Commit/Push `npm run pages:export` ausführen und die aktualisierten Exportdateien committen. Der Exportbefehl ersetzt nur zuvor registrierte generierte Dateien, keine Anwendungsquellen. Das ist ein zusätzlicher, bewusst eingecheckter Veröffentlichungsstand; Secrets und Datenbank sind nicht enthalten.
+
+## Alternative: Veröffentlichung über Actions
 
 Im Repository **Settings → Pages → Build and deployment → Source → GitHub Actions** wählen. Dies ersetzt die bisherige Jekyll-/README-Veröffentlichung durch die Web-App-Vorschau.
 
