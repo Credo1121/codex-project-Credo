@@ -1,4 +1,4 @@
-name: Publish frontend preview to GitHub Pages
+name: Validate frontend preview
 on:
   push:
     branches: [main]
@@ -6,7 +6,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: pages
+  group: frontend-preview-validation
   cancel-in-progress: true
 jobs:
   build:
@@ -20,20 +20,3 @@ jobs:
       - run: npm ci
       - run: npm run lint
       - run: npm run pages:build
-      - run: touch pages-preview/out/.nojekyll
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: pages-preview/out
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy preview
-        id: deployment
-        uses: actions/deploy-pages@v4

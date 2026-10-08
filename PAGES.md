@@ -10,13 +10,11 @@ Der fertige statische Build liegt zusätzlich im Hauptverzeichnis von `main`: `i
 
 Nach künftigen UI-Änderungen vor Commit/Push `npm run pages:export` ausführen und die aktualisierten Exportdateien committen. Der Exportbefehl ersetzt nur zuvor registrierte generierte Dateien, keine Anwendungsquellen. Das ist ein zusätzlicher, bewusst eingecheckter Veröffentlichungsstand; Secrets und Datenbank sind nicht enthalten.
 
-## Alternative: Veröffentlichung über Actions
+## Prüfung der Veröffentlichung
 
-Im Repository **Settings → Pages → Build and deployment → Source → GitHub Actions** wählen. Dies ersetzt die bisherige Jekyll-/README-Veröffentlichung durch die Web-App-Vorschau.
+`https://credo1121.github.io/codex-project-Credo/pages-version.json` muss die Versionskennung **CHG-008** liefern. Zeigt die Datei 404 oder einen anderen Stand, ist der aktuelle main-Stand noch nicht veröffentlicht. Der zuständige Lauf heißt **pages build and deployment** (GitHub-Branch-Veröffentlichung). Ein grüner **Validate frontend preview**-Lauf bestätigt nur den Quellbuild.
 
-Unter **Actions → Publish frontend preview to GitHub Pages** den Lauf des neuesten main-Commits prüfen. Falls nach der Einstellungsänderung kein neuer Lauf startet: **Run workflow → main → Run workflow**. Nach erfolgreichem Build und Deploy die Zieladresse öffnen, gegebenenfalls hart neu laden. Falls GitHub Actions im Konto deaktiviert ist oder ein Environment-Approval verlangt wird, dessen angezeigte Einstellung/Freigabe ist im GitHub-Konto zu erledigen.
-
-Der Workflow installiert aus package-lock.json und exportiert ausschließlich `pages-preview/out`. Weder `.env.local` noch Datenbank oder Backend werden veröffentlicht. Keine GitHub-Secrets für diese Vorschau nötig. Die vollständige serverseitige App und Codespaces bleiben separat verfügbar.
+Es gibt bewusst nur einen Veröffentlichungsweg: **main / (root)**. Der eigene Workflow validiert den Build, deployt aber nicht zusätzlich. Nach Einstellungswechsel muss gegebenenfalls die Branch-Pages-Quelle erneut gespeichert werden. Für einen Cache-unabhängigen Aufruf kann die App mit `?release=CHG-008` geöffnet werden.
 
 ## Lokal prüfen (optional)
 

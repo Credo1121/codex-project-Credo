@@ -27,3 +27,6 @@ Nutzer wünscht zunächst nur Frontend zum Durchklicken; dies ersetzt für die V
 
 ## CHG-007 – Veröffentlichung aus main-Hauptverzeichnis
 Fertiger statischer Vorschau-Export auf main eingecheckt, damit die bisherige Branch-Pages-Veröffentlichung index.html statt README liefert. Build/Lint und reale statische Browsernavigation PASS. Live-Pages-Einstellungen/Deployment unverifiziert; ggf. main / (root) in Pages auswählen. Weitere Details changes/CHG-007.md.
+
+## CHG-008 – Pages-Veröffentlichung eingrenzen
+Nutzer bestätigt Branch main / root und grünen Lauf, sieht aber Anleitung. Remote-main 71269f4 einschließlich Appdateien erneut gelesen. Zusätzlichen Actions-Deploy entfernt; Workflow validiert nur noch, damit Branch-Pages die einzige Quelle bleibt. pages-version.json (CHG-008) ermöglicht Prüfung des tatsächlich ausgelieferten Stands. Öffentliche URL/API aus Cloud weiter blockiert; Live-Ergebnis nicht verifiziert.
