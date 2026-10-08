@@ -1,0 +1,53 @@
+{
+  "change": "CHG-009",
+  "version": "0.2.0",
+  "basis": "working tree based on c3bb480, committed together with source",
+  "time_utc": "2026-10-08T14:27:49.956235+00:00",
+  "route": "/codex-project-Credo/",
+  "viewports": {
+    "desktop": "1440x1000",
+    "mobile": "390x844"
+  },
+  "viewed": [
+    "radar-desktop.png",
+    "radar-mobile.png",
+    "gantt-desktop.png",
+    "gantt-mobile.png",
+    "interview-desktop.png",
+    "print.png"
+  ],
+  "files": [
+    {
+      "path": "before-roadmap.png",
+      "sha256": "8e53e4bd8c806a79f30ad871e8a4a36f0339de37caa61b4162a89c609b6ea99a"
+    },
+    {
+      "path": "gantt-desktop.png",
+      "sha256": "9aa1ee9f1f887a29dd08cf5525ec8fa58d5c766c29d26fe5443c300eabb18c5c"
+    },
+    {
+      "path": "gantt-mobile.png",
+      "sha256": "2c5915acbeaa5cb39ad0c9843bd4f746c43d3c128b2788a6a7d57102536ba7f8"
+    },
+    {
+      "path": "interview-desktop.png",
+      "sha256": "561e76e1ea3235b4c04657b348271bd419ae54fbd95531398a1ad5443d362e8a"
+    },
+    {
+      "path": "overview-desktop.png",
+      "sha256": "7c5904882d8b3d011423a1c52b427d66659bd916fe40edae80164547b25edc41"
+    },
+    {
+      "path": "print.png",
+      "sha256": "ef40c5e9af05098dbbf6d7c038dc8e05e1e6819e1619c81e244a5938f16656d2"
+    },
+    {
+      "path": "radar-desktop.png",
+      "sha256": "5f99459d5a156d3602fcaf7eb3b1e3ecf0825e6152c0e6253a3e33377db688cb"
+    },
+    {
+      "path": "radar-mobile.png",
+      "sha256": "dead8cea60c85b2dcc45198759490f7423da77322400d5405c4c6e501c2d4bb8"
+    }
+  ]
+}

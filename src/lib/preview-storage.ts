@@ -1,10 +1,12 @@
+import { analysisAreas } from './analysis-method';
 import { createProject, createSession } from './methodology';
 import { createSchema, projectSchema, type Project } from './schema';
 const key='org-cockpit-pages-preview-v1';
 function load():Project[]{
  const saved=localStorage.getItem(key);
  if(saved!==null){const parsed=JSON.parse(saved);if(!Array.isArray(parsed))throw Error('Invalid preview data');return parsed.map(p=>projectSchema.parse(p))}
- const p=createProject({title:'Analyse Produkt & Markt',goal:'Entscheidungen und Zusammenarbeit nachvollziehbar verstehen.',scope:'Synthetisches Beispiel · Produkt- und Marktmanagement',start:'2026-10-12'});
+ const p=createProject({title:'Analyse Produkt & Markt',goal:'Entscheidungen und Zusammenarbeit nachvollziehbar verstehen.',scope:'Synthetisches Beispiel · Produkt- und Marktmanagement',start:'2026-10-19'});
+ p.assessments=[1,2,3,4,5,6].map((index)=>({perspective:analysisAreas[index].name,applicable:true,modelVersion:'hands-on-v1' as const,knowledge:[2,3,2,1,2,1][index-1],performance:[3,3,2,2,3,2][index-1],evidence:'erste Aussage' as const,rationale:'Synthetisches Beispiel zur Bedienung; keine Aussage über ein reales Unternehmen.',reference:'SYN-DEMO-'+(index+1),updatedAt:'2026-10-08T12:00:00.000Z'}));
  p.phase=2;p.tasks[0].status='erledigt';p.sessions.push(createSession(p.tasks[1]));localStorage.setItem(key,JSON.stringify([p]));return[p];
 }
 export function resetPreview(){localStorage.removeItem(key)}

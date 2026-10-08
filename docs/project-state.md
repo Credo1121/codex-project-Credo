@@ -30,3 +30,15 @@ Fertiger statischer Vorschau-Export auf main eingecheckt, damit die bisherige Br
 
 ## CHG-008 – Pages-Veröffentlichung eingrenzen
 Nutzer bestätigt Branch main / root und grünen Lauf, sieht aber Anleitung. Remote-main 71269f4 einschließlich Appdateien erneut gelesen. Zusätzlichen Actions-Deploy entfernt; Workflow validiert nur noch, damit Branch-Pages die einzige Quelle bleibt. pages-version.json (CHG-008) ermöglicht Prüfung des tatsächlich ausgelieferten Stands. Öffentliche URL/API aus Cloud weiter blockiert; Live-Ergebnis nicht verifiziert.
+
+## Neue Planungsrunde: Radar, Interviewführung und Roadmap
+Nutzer bestätigt funktionierende Pages-Vorschau. web-requirements-Discovery für Wissens-/Organisationsbewertung, Mittelstandsvergleich und Hands-on-Priorität gestartet. Drei gezielte Fragen zu Bewertungs-/Datengrenzen, Benchmark/Hands-on und erster Nutzerreise gestellt; Antworten ausstehend. Interviewnotizen: discovery/radar-interview-roadmap.md. Noch keine Ready-Anforderungen/Umsetzung; bestehende App unverändert.
+
+## Planungsentwurf nach Radar-Interview
+Fünf Antworten eingearbeitet. Methodikreise und Bewertungs-/Interview-/Roadmap-Entwurf in planning/radar-interview-roadmap.md; noch Draft. Genaues Abgabedatum/Interviewfenster und Hands-on-Kriterien offen. Externe Interviewmethodenquellen konnten wegen 403 nicht gelesen werden; kein empirischer Validierungs-/Benchmarkclaim. Nur Planungsdateien geändert, keine Anwendung/Deployment. Nächster Schritt: Folgeantworten einarbeiten, Skalenanker und Zielbild konkretisieren, prüfbare REQ/AC refinieren.
+
+## Bestätigter Zeitrahmen und Hands-on-Prinzip
+Interviewstart 19.10.2026, Ergebnis-/Berichtsabgabe 30.11.2026. Hands-on bedeutet zweckmäßige, verhältnismäßige Lösungen; Excel kann Zielbildniveau erfüllen, Toolausbau ist kein Selbstzweck. Planungsentwurf um Kalenderfenster, Skalenentwurf und Draft-REQ-009/010/011 erweitert; Backlog ergänzt. Architektur-/QA-Refinement und fachliche Review der Skalen/Kriterien als nächster Schritt. Kein Anwendungscode, Commit/Push oder Deployment ausgeführt.
+
+## CHG-009 – neue Version 0.2.0
+Nutzer beauftragt Umsetzung. Radar mit manueller begründeter Wissens-/Leistungsbewertung und Geschichte, Bereichsfragen/Leitfadenkopien, bestätigte Folgeaktivitäten und moderne Gantt-/Flow-Roadmap implementiert. Lokale geschützte App und synthetische Pages-Vorschau nutzen gemeinsame UI. Build/Typecheck/Lint, neue Browserreise und zwei Bestands-E2E PASS; zusätzliche Backendvalidierung PASS. Neue Screenshots tatsächlich gesichtet, Details und NOT RUN in qa/CHG-009.md. Erste Kriterien-/Roadmapversion, keine vollständige REQ-/MVP-Abnahme. Private Interviewdateien/Minutes weiterhin nicht implementiert oder hochgeladen. Nächster Schritt: Nutzerreview der neuen Ansichten, danach Kriterien/Leitfragenstatus, Abhängigkeiten und Berichtskapitelworkflow vertiefen.

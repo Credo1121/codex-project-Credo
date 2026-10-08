@@ -2,7 +2,7 @@
 
 **[Interaktive Frontend-Vorschau öffnen](https://credo1121.github.io/codex-project-Credo/)** · [GitHub-Pages-Veröffentlichung](PAGES.md)
 
-Die Pages-Vorschau verwendet ausschließlich Browserdaten, ohne Login oder Backend. Die folgende Dokumentation beschreibt die zusätzlich erhaltene vollständige App.
+Die neue Version ergänzt Analyse-Radar, manuelle begründete Bewertungen, gezielte Ablauf-/Vertiefungsfragen und eine Gantt-Roadmap. Die Pages-Vorschau verwendet ausschließlich Browserdaten, ohne Login oder Backend. Die folgende Dokumentation beschreibt die zusätzlich erhaltene vollständige App.
 Erster vertikaler Lieferabschnitt: geschützter Einzel-Admin, Projekt mit Sechs-Wochen-Roadmap, Aufgaben/Checklisten, Marktmanagement-Sitzung, eigener editierbarer Leitfaden mit Druckansicht und getrennte Nachbereitung/Folgeaufgaben. Dauerhafte lokale SQLite-Speicherung.
 
 Noch kein vollständiges MVP: weitere Rollen/Methodikinhalte, Ergebnis-/Berichtsvorlagen, zulässige Notizen/Referenzen und Backup/Restore folgen. Kein Deployment ausgeführt.
@@ -48,3 +48,11 @@ Niemals gegen eine Nutzer-/Produktivdatenbank testen.
 - `npm run typecheck`, `npm run lint`; `npm audit --omit=dev`.
 
 Evidenz: docs/evidence/REQ-008. QA-Ergebnisse/Grenzen: docs/qa/S1-results.md. Nutzer-OS und weitere Browser noch nicht verifiziert. Localhost-Adressen sind keine veröffentlichten Vorschauen.
+
+## Neue Analyseansichten
+
+- **Analyse-Radar:** Informationsabdeckung (0–3) und Leistungsfähigkeit (1–4) getrennt; unbekannt/nicht anwendbar, Belegstatus, Begründung und Bewertungsverlauf. Ein Leitkriterium je Bereich als erster Stand; praxisorientiertes Zielbild, kein empirischer Benchmark.
+- **Interviewführung:** Radarbereich öffnet eine eigene Fragenkopie mit konkreten Ablauf-/Entscheidungs-/Tool-/Nachhaltefragen; Sitzungen und Zielgruppen auswählbar, Druckansicht. Keine vertraulichen Minutes/Uploads implementiert.
+- **Roadmap:** überlappende Arbeitsfenster, Aufgabentermine und Sitzungen/Meilensteine; Aufgaben öffnen direkt, alternativ Listenansicht. Balken sind vorgeschlagene Fenster, keine automatisch validierten Ergebnisse.
+
+Bereits gespeicherte Projekte/Leitfäden werden erhalten. Für das neue synthetische Beispiel mit 19.10.–30.11.2026 in der Pages-Vorschau bewusst „Beispiel zurücksetzen“ wählen (löscht dortige Vorschauänderungen). Neue lokale Projekte beginnen mit unbekannten Bewertungen, ohne synthetische Kundenbefunde. Kalender und Vergleich sind fachlich weiterhin zu reviewen; Live-Pages-Deployment ist nicht aus der Cloud verifiziert.

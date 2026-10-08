@@ -12,9 +12,9 @@ Nach künftigen UI-Änderungen vor Commit/Push `npm run pages:export` ausführen
 
 ## Prüfung der Veröffentlichung
 
-`https://credo1121.github.io/codex-project-Credo/pages-version.json` muss die Versionskennung **CHG-008** liefern. Zeigt die Datei 404 oder einen anderen Stand, ist der aktuelle main-Stand noch nicht veröffentlicht. Der zuständige Lauf heißt **pages build and deployment** (GitHub-Branch-Veröffentlichung). Ein grüner **Validate frontend preview**-Lauf bestätigt nur den Quellbuild.
+`https://credo1121.github.io/codex-project-Credo/pages-version.json` muss die Versionskennung **CHG-009** liefern. Zeigt die Datei 404 oder einen anderen Stand, ist der aktuelle main-Stand noch nicht veröffentlicht. Der zuständige Lauf heißt **pages build and deployment** (GitHub-Branch-Veröffentlichung). Ein grüner **Validate frontend preview**-Lauf bestätigt nur den Quellbuild.
 
-Es gibt bewusst nur einen Veröffentlichungsweg: **main / (root)**. Der eigene Workflow validiert den Build, deployt aber nicht zusätzlich. Nach Einstellungswechsel muss gegebenenfalls die Branch-Pages-Quelle erneut gespeichert werden. Für einen Cache-unabhängigen Aufruf kann die App mit `?release=CHG-008` geöffnet werden.
+Es gibt bewusst nur einen Veröffentlichungsweg: **main / (root)**. Der eigene Workflow validiert den Build, deployt aber nicht zusätzlich. Nach Einstellungswechsel muss gegebenenfalls die Branch-Pages-Quelle erneut gespeichert werden. Für einen Cache-unabhängigen Aufruf kann die App mit `?release=CHG-009` geöffnet werden.
 
 ## Lokal prüfen (optional)
 
