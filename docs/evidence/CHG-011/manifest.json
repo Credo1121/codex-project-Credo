@@ -6,7 +6,7 @@
   "viewports": {"desktop":"1440x1000","mobile":"390x844"},
   "viewed": ["traceability-desktop.png","traceability-mobile.png"],
   "files": [
-    {"path":"traceability-desktop.png","sha256":"38b87fd8a6543a8156fe6b5e23c79a635320d2199eecc267f9876039a362d24a"},
-    {"path":"traceability-mobile.png","sha256":"9ce6b68f3405322c6c344fb123e56080db4a8e2574e4efecc0638d24dacb3ffd"}
+    {"path":"traceability-desktop.png","sha256":"c4e5346f52b93298ec27048a0062f09f3ef54a1263b0ecf8803731e7f3d7fae0"},
+    {"path":"traceability-mobile.png","sha256":"ce69e715470fbbd2cbd879dda3ff2744935ba364f25301f9d6204cc120ebcb4e"}
   ]
 }
