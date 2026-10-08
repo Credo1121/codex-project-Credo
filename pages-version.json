@@ -1,6 +1,7 @@
 {
   "application": "ORG COCKPIT",
   "release": "CHG-011",
+  "build": "2026-10-08-chg011-r2",
   "mode": "frontend-preview",
   "publication": "main-root",
   "features": ["evidence-chain", "star-plus-framework", "7s-orientation", "role-specific-interview-guides", "gantt-roadmap"]
