@@ -1,0 +1,44 @@
+{
+  "name": "organisationsatelier",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "admin:init": "tsx --env-file=.env.local scripts/admin.ts init",
+    "admin:reset": "tsx --env-file=.env.local scripts/admin.ts reset",
+    "test:e2e": "playwright test",
+    "qa:prepare": "tsx scripts/qa-prepare.ts",
+    "qa:serve": "node scripts/qa-next.mjs start",
+    "qa:retained": "tsx --env-file=.env.qa.local scripts/check-retained.ts",
+    "qa:build": "node scripts/qa-next.mjs build",
+    "local:setup": "node scripts/local-setup.mjs"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "dependencies": {
+    "better-auth": "1.7.7",
+    "better-sqlite3": "13.0.3",
+    "lucide-react": "1.53.0",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "0.0.1",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0",
+    "@types/better-sqlite3": "9.6.0",
+    "@types/node": "26.6.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.4.0",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  }
+}

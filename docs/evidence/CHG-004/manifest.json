@@ -1,0 +1,119 @@
+{
+  "source": "Echte Chromium-Aufnahmen der laufenden Next.js-Anwendung; keine generierten Mockups. Keine Projektdaten geändert.",
+  "records": [
+    {
+      "file": "01-login-desktop.png",
+      "state": "Login ohne Eingaben",
+      "url": "http://localhost:3000/login",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "fullPage": false,
+      "capturedAt": "2026-10-08T12:20:25.095Z",
+      "sha256": "d778feb5095e87c2c9e4ec9656b4eec9c0dbbaa6ad32cb2bd7dd6e2268bfb0a7"
+    },
+    {
+      "file": "02-uebersicht-desktop.png",
+      "state": "Projektübersicht – erster Bildschirm",
+      "url": "http://localhost:3000/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "fullPage": false,
+      "capturedAt": "2026-10-08T12:20:26.081Z",
+      "sha256": "9cd1fd9cc5d7703db9ec075c52f16ed0ad3db249117d50d8d2301c6071327350"
+    },
+    {
+      "file": "03-uebersicht-desktop-komplett.png",
+      "state": "Projektübersicht – vollständig",
+      "url": "http://localhost:3000/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "fullPage": true,
+      "capturedAt": "2026-10-08T12:20:26.242Z",
+      "sha256": "6796d3b09b9b926cb807da8cd1a1edf319968edac5df85c6d12c3e3987041936"
+    },
+    {
+      "file": "04-uebersicht-mobile.png",
+      "state": "Projektübersicht Mobile – erster Bildschirm",
+      "url": "http://localhost:3000/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": false,
+      "capturedAt": "2026-10-08T12:20:26.354Z",
+      "sha256": "8e2ef3d5269152dd5fef9213e42940f100431e8f3d9777f67b4cb36de8addbc6"
+    },
+    {
+      "file": "05-uebersicht-mobile-komplett.png",
+      "state": "Projektübersicht Mobile – vollständig",
+      "url": "http://localhost:3000/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "fullPage": true,
+      "capturedAt": "2026-10-08T12:20:26.593Z",
+      "sha256": "17b4919d6c365ad7a56aad83e979412b328092e5970a4dd0e8238afe3eac2673"
+    },
+    {
+      "file": "06-interview-desktop.png",
+      "state": "Sitzungsorganisation und getrennte Nachbereitung",
+      "url": "http://localhost:3000/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "fullPage": false,
+      "capturedAt": "2026-10-08T12:20:26.821Z",
+      "sha256": "515c784d87f103877f63d6fd3b0f516737d294332d62da87811ac691127b84b9"
+    },
+    {
+      "file": "07-fragen-desktop.png",
+      "state": "Leitfadenfragen – lesbarer Ausschnitt",
+      "url": "http://localhost:3000/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "fullPage": false,
+      "capturedAt": "2026-10-08T12:20:26.950Z",
+      "sha256": "5cc8d742b5761bd1c7d83a60326b79be1c9e4941e5482cfa310c8ae23bd5fcd4"
+    },
+    {
+      "file": "08-druckansicht.png",
+      "state": "Gespeicherte ausgewählte Fragen",
+      "url": "http://localhost:3000/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "fullPage": true,
+      "capturedAt": "2026-10-08T12:20:27.129Z",
+      "sha256": "baf3397eaeda702c76b2e6f033f9b6ca250dff18d14c0c991341554511f27210"
+    }
+  ],
+  "sourceBasis": {
+    "git": "unborn work, uncommitted",
+    "applicationSHA256": "180b1adeec0cf0027cd55cf4dadf3c314ae6cecc550e75d70dd5f7e7d71adc9e",
+    "files": [
+      "src/app/api/auth/[...all]/route.ts",
+      "src/app/api/workspace/route.ts",
+      "src/lib/auth.ts",
+      "src/lib/db.ts",
+      "src/lib/methodology.ts",
+      "src/lib/schema.ts",
+      "src/app/layout.tsx",
+      "src/app/login/page.tsx",
+      "src/app/page.tsx",
+      "src/components/login.tsx",
+      "src/components/workspace.tsx",
+      "src/app/globals.css"
+    ]
+  }
+}

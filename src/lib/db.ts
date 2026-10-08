@@ -1,0 +1,11 @@
+import Database from 'better-sqlite3';
+import { mkdirSync } from 'node:fs';
+import { dirname,resolve } from 'node:path';
+const path=resolve(/* turbopackIgnore: true */ process.env.DATABASE_PATH||'.data/workspace.sqlite');
+mkdirSync(dirname(path),{recursive:true,mode:0o700});
+export const db=new Database(path);
+db.pragma('journal_mode = WAL');db.pragma('foreign_keys = ON');db.pragma('busy_timeout = 5000');
+db.exec(`CREATE TABLE IF NOT EXISTS app_migrations(version INTEGER PRIMARY KEY);
+ CREATE TABLE IF NOT EXISTS app_admin(singleton INTEGER PRIMARY KEY CHECK(singleton=1),user_id TEXT NOT NULL UNIQUE);
+ CREATE TABLE IF NOT EXISTS projects(id TEXT PRIMARY KEY,request_id TEXT NOT NULL UNIQUE,revision INTEGER NOT NULL DEFAULT 0,data TEXT NOT NULL CHECK(json_valid(data)));
+ INSERT OR IGNORE INTO app_migrations VALUES(1);`);

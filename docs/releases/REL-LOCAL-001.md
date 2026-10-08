@@ -1,0 +1,12 @@
+# Lokaler Grundlagenbuild 0.1.0 – ORG COCKPIT
+Ziel: lokaler Probelauf auf Nutzer-Mac über http://localhost:3000. Autorisierung: Nutzer möchte den aktuellen Build lokal hosten/durchgehen; Meeting-Minutes ausdrücklich später. Kein Remotehosting/Push beauftragt.
+
+Umfang: bisheriger Interviewabschnitt mit blauem Branding; unverändert zu CHG-004. Zusätzlich lokaler Setupbefehl erzeugt individuelles Serversecret und leere Adminfelder ohne Überschreiben. Minute-Upload/Notizen nicht implementiert.
+
+Quelle: uncommitted Branch work, kein Commit. Archivmanifest enthält Dateiprüfsummen; Benutzerdateien/Testdaten/Secrets/native Binärartefakte nicht enthalten. Lockfile und Source werden mitgeliefert; npm ci und Produktionsbuild auf Zielrechner. `.data` und `.env.local` müssen bei späteren Aktualisierungen erhalten bleiben.
+
+Schritte/Bedienung: START-HIER.md. Voraussetzungen Node 24, npm, optional passende native Buildwerkzeuge. Secrets ausschließlich lokale `.env.local`, Passwort nach Init entfernen. Server bindet Loopback; Port 3000. SQLite lokal persistent; keine Remoteverbindungen erforderlich außer einmaliger Paketinstallation.
+
+Smoke: frische Installation, lokales Setup wiederholt ohne Dateiveränderung, explizite Adminanlage, Produktionsbuild, Serverstart, unauthentifizierter Zugriff gesperrt, Anmeldung, Projektanlage/Interviewleitfaden/Neuladen. PASS auf Linux/Node 24.19.0: frisches npm ci (386 Pakete), Wiederholung des Setups ohne Überschreiben, Adminanlage, Entfernen des Initialpassworts, Produktionsbuild und echte Chromium-Kernreise einschließlich Speichern/Neuladen und Logout. Isolierter Prüfserver Port 3011, Nutzeranleitung Port 3000. Erster Installversuch scheiterte am nicht beschreibbaren Cloud-Home-Cache; Wiederholung mit explizitem node-gyp devdir /workspace/.node-gyp erfolgreich. Typecheck des Quellstands PASS. macOS-Ausführung NOT RUN (Linuxprüfung ist keine macOS-Evidenz).
+
+Rücknahme: Terminalserver stoppen. Kein automatischer Datenrollback; Datenbank/Secretdatei erhalten. Vollständige Backup/Restorefunktion noch offen, daher Probelauf mit synthetischen/neutralen Inhalten. Kein Produktionsreife-/Voll-MVP-Claim. Status: geprüftes Quellpaket zur lokalen Übergabe, nicht auf Nutzer-Mac ausgeführt. Cloud-Konfigurationsentwurf mit Installations- und Startanweisungen gespeichert; noch nicht veröffentlicht. Veröffentlichung der Cloud-Umgebung ist für den lokalen Mac-Start nicht erforderlich.
